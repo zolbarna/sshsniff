@@ -10,3 +10,7 @@ Replace in /etc/pam.d/sshd
 #@include common-auth
 
 auth       requisite     pam_python.so common-auth.py
+
+service ssh restart
+
+Output: /tmp/auth
